@@ -1,0 +1,78 @@
+		body {
+            font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+			background-color: #f8f9fa;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			margin-top: 50px;
+			text-align: left;
+			color: #343a40;
+		}
+
+		table {
+			border-collapse: collapse;
+			margin: 20px auto;
+			background-color: #fff;
+			border: 2px solid #dee2e6;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		th,
+		td {
+			border: 1px solid #dee2e6;
+			padding: 10px;
+			text-align: center;
+		}
+
+		th {
+			background-color: #f2f2f2;
+			color: #343a40;
+		}
+		tr {
+			height: 70px;
+		}
+
+		.compulsory {
+			background-color: #e4ffde;
+            
+		}
+
+		.pro {
+			background-color: #dfdeff;
+            
+		}
+
+		.fund {
+			background-color: #fff2de;
+            
+		}
+
+		.interest {
+			background-color: #fbffde;
+            
+		}
+
+		.life {
+			background-color: #ffdefb;
+            
+		}
+
+		.food {
+			background-color: #f0f0f0;
+
+		}
+
+		.rest {
+			background-color: #dafaff;
+			
+		}
+
+		.before {
+			display: none
+		}
+
+		.after {
+			display: block
+		}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SLEK 大學課表</title>
+	<link rel="stylesheet" href="styles1.css">
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="timetable.js"></script>
+</head>
+
+<body>
+    <h1>登入並查看你的課表</h1>
+    <input type="text" id="student_id" onkeypress="handleKeyPress(event)">
+    <button class = "button" onclick="loadStudentSchedule()">登入</button>
+    <div id="content">
+
+    </div>
+
+
+	<div class="before"><h1 >SLEK 大學課表</h1>
+
+	<table>
+		<tr> 
+            <!-- 標題欄 -->
+			<th>時間</th>
+			<th>1/20(一)</th>
+			<th>1/21(二)</th>
+			<th>1/22(三)</th>
+			<th>1/23(四)</th>
+			<th>1/24(五)</th>
+
+		</tr>
+
+		<tr>
+            <!-- 第一節 09:10-10:00 -->
+			<td class="highlight"><b>09:10-10:00</b></td>
+			<td><b>報到</b><br>(教室 A)</td>
+			<td></td>
+			<td class="interest"><p id="ppt"></td>
+			<td></td>
+            <td rowspan="2" class="compulsory"><b>國考</b><br>(教室 A)</td>
+		</tr>
+
+		<tr>
+            <!-- 第二節 10:10-11:00 -->
+			<td class="highlight"><b>10:10-11:00</b></td>
+			<td class="compulsory"><b>始業式</b><br>(教室 A)</td>
+			<td class="compulsory" rowspan="2"><b>解剖組織學（下）</b><br>(教室 A)</td>
+            <td class="compulsory" rowspan="2"><b>胚胎學（下）</b><br>(教室 A)</td>
+            <td class="compulsory" rowspan="2"><b>病生理學（下）</b><br>(教室 A)</td>
+		</tr>
+
+		<tr>
+            <!-- 第三節 11:10-12:00 -->
+			<td class="highlight"><b>11:10-12:00</b></td>
+			<td class="compulsory"><b>基本學習救命術</b><br>(教室 A)</td>
+            <td rowspan="2" class="compulsory"><b>Case study</b><br>(教室 B)</td>
+		</tr>
+
+		<tr>
+            <!-- 第四節 12:10-13:00 -->
+			<td class="highlight"><b>12:10-13:00</b></td>
+			<td colspan="4" class="food">午餐</td>
+		</tr>
+
+		<tr>
+            <!-- 第五節 13:10-14:00 -->
+			<td class="highlight"><b>13:10-14:00</b></td>
+			<td rowspan="2"><p id="introduction"></p></td>
+			<td rowspan="2" class="compulsory"><p id="parasitology"></p></td>
+			<td rowspan="2" class="interest"><p id="ppt2"></td>
+			<td rowspan="2" class="compulsory"><p id="parasitology_report"></p></td>
+            <td rowspan="2" class="compulsory"><b>結業式</b><br>(教室 A)</td>
+		</tr>
+
+		<tr>
+            <!-- 第六節 14:10-15:00 -->
+			<td class="highlight"><b>14:10-15:00</b></td>
+		</tr>
+
+        <tr>
+            <!-- 第七節 15:10-16:00 -->
+			<td class="highlight"><b>15:10-16:00</b></td>
+            <td class="compulsory" rowspan="2"><b>解剖組織學（上）</b><br>(教室 A)</td>
+            <td class="compulsory" rowspan="2"><b>胚胎學（上）</b><br>(教室 A)</td>
+            <td class="compulsory" rowspan="2"><b>病生理學（上）</b><br>(教室 A)</td>
+            <td class="compulsory" rowspan="2"><b>PBL</b><br>(教室 A)</td>
+            <td rowspan="7"><b>賦歸</b></td>
+		</tr>
+
+        <tr>
+            <!-- 第八節 16:10-17:00 -->
+			<td class="highlight"><b>16:10-17:00</b></td>
+
+		</tr>
+
+        <tr>
+            <!-- 第九節 17:10-18:00 -->
+			<td class="highlight"><b>17:10-18:00</b></td>
+			<td colspan="3" class="food">晚餐</td>
+            <td class="compulsory"><b>跑台</b><br>(教室 A)</td>
+		</tr>
+
+        <tr>
+            <!-- 第十節 18:10-19:00 -->
+			<td class="highlight"><b>18:10-19:00</b></td>
+			<td rowspan="2"><p id="english"></p></td>
+			<td rowspan="3" class="pro"><p id="CT"></p></td>
+			<td rowspan="3"><p id="question"></p></td>
+			<td class="food">晚餐</td>
+		</tr>
+
+        <tr>
+            <!-- 第十一節 19:10-20:00 -->
+			<td class="highlight"><b>19:10-20:00</b></td>
+            <td><p id="openmic"></p></td>
+		</tr>
+
+        <tr>
+            <!-- 第十二節 20:10-21:00 -->
+			<td class="highlight"><b>20:10-21:00</b></td>
+			<td><p id="interview"></td>
+            <td class="compulsory"><b>神秘活動 + 頒獎</b><br>(教室 A)</td>
+		</tr>
+
+        <tr>
+            <!-- 第十三節 21:00- -->
+			<td class="highlight"><b>21:00-</b></td>
+            <td colspan="4"><b>回宿舍/講師查房</b></td>
+		</tr>
+
+	</table></div>
+
+</body>
+
+</html>
+
