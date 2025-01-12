@@ -1,6 +1,6 @@
 const API_KEY = 'AIzaSyDP-PI__wBgKo2OblplKbAjYZ8GuplEYQs';
 const SPREADSHEET_ID = '1-hJK3fx7VWQov16weyJOZq8bq08eTzK4H91qrqowY2M';
-const ELECTIVE_RANGE = 'ele!A:J';
+const ELECTIVE_RANGE = '正式選課結果!A:J';
 const inputarea = document.querySelector(".inputarea");
 const keyin = document.querySelector(".keyin");
 const keyinarea = document.querySelector(".keyinarea");
